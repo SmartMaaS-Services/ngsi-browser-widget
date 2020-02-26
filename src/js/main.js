@@ -215,6 +215,17 @@
                     if (id_pattern === '') {
                         id_pattern = '.*';
                     }
+
+                    var georel = mp.prefs.get('georel').trim();
+                    var geometry = mp.prefs.get('geometry').trim();
+                    var coords = mp.prefs.get('coords').trim();
+
+                    if (georel === '' || geometry === '' || coords === '') {
+                        georel = undefined;
+                        geometry = undefined;
+                        coords = undefined;
+                    }
+
                     if (this.type_filter) {
                         types = this.type_filter;
                     } else {
@@ -231,6 +242,9 @@
                     this.ngsi_connection.v2.listEntities({
                         count: true,
                         idPattern: id_pattern,
+                        georel: georel,
+                        geometry: geometry,
+                        coords: coords,
                         limit: options.pageSize,
                         offset: (page - 1) * options.pageSize,
                         type: types,
