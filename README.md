@@ -1,3 +1,5 @@
+[![](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/visualization.svg)](https://www.fiware.org/developers/catalogue/)
+
 # NGSI Browser widget
 
 The NGSI Browser widget allows you to browser [Orion Context
