@@ -2,13 +2,31 @@
 
 The NGSI Browser widget allows you to browser [Orion Context
 Broker](http://catalogue.fiware.org/enablers/publishsubscribe-context-broker-orion-context-broker)
-servers in a easy and paginated way. This is done using the `queryContext`, so
+servers in an easy and paginated way. This is done using the `queryContext`, so
 updates made into the context broker are not reflected immediately when using
 this widget.
+
+<p align="center">
+    <img src="src/images/operator.png" alt="GTFS Relationships Analyzer Operator" width="80%">
+</p>
 
 > Latest version of this widget is available in this github repositories where you
 > can make use of it on the [Mashup portal](https://mashup.lab.fiware.org).
 > Remember to take a look into the example mashups provided in the OrionStarterKit offering.
+
+### Visualization example
+
+Retrieving AirQualityObserved NGSIv2 data
+
+<p align="center">
+    <img src="src/images/dashboard.png" alt="GTFS Relationships Analyzer Operator" width="80%">
+</p>
+
+### Settings
+
+<p align="center">
+    <img src="src/images/settings.png" alt="GTFS Relationships Analyzer Operator" width="80%">
+</p>
 
 Build
 -----
